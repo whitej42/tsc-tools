@@ -20,6 +20,16 @@ function Lines() {
                 </p>
             </div>
 
+            {/* Coverage caveat — shrink-0 so it does not eat the map's height */}
+            <div className="px-6 py-2 border-b border-gray-200 dark:border-surface-dark-border flex-shrink-0 flex items-center gap-2 bg-rail-amber/10">
+                <span className="font-rail font-bold tracking-rail uppercase text-[10px] text-rail-amber border border-rail-amber rounded-rail px-1.5 py-0.5 shrink-0">
+                    Beta
+                </span>
+                <p className="text-gray-600 dark:text-gray-400 text-xs">
+                    Not all Train Simulator Classic routes are included yet, and station and DLC details may be incomplete. More are being added over time.
+                </p>
+            </div>
+
             {/* Map + sidebar fills remaining height */}
             <div className="flex-1 min-h-0 h-full">
                 <RouteMap />
