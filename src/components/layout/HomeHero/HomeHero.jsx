@@ -1,8 +1,15 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
-const heroContext = require.context('../../../assets/images/hero', false, /\.webp$/);
-const heroImages = heroContext.keys().map(heroContext);
+// Hero images are served from CloudFront rather than bundled, so the filenames
+// come from a manifest (regenerate with scripts/compress-hero.mjs) instead of
+// require.context, which can only enumerate files present at build time.
+import heroFiles from './heroImages.json';
+
+const HERO_BASE_URL = process.env.REACT_APP_HERO_BASE_URL
+    || 'https://d2bkh2cbyqf4mv.cloudfront.net';
+
+const heroImages = heroFiles.map(f => `${HERO_BASE_URL}/hero/${f}`);
 
 // Fisher-Yates: vary the order per visit without repeating an image until the
 // whole set has been shown.
