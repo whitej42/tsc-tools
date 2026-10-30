@@ -19,13 +19,13 @@ const features = [
     },
     {
         title: "Routes",
-        desc: "Browse route and line information to help build more believable services.",
-        future: true,
+        desc: "Browse route and line information to help build more believable services. Includes which DLC packs each route is included in.",
+        future: false,
     },
     {
         title: "Guides",
-        desc: "Tips, notes, and the occasional rabbit hole for scenario builders.",
-        future: true,
+        desc: "Hand-picked guides, tutorials and tools from the community — scenario creation, steam driving, rail maps and live timetables.",
+        future: false,
     },
 ];
 
@@ -142,10 +142,10 @@ function About() {
                     <p>
                         I got fed up of the same routine every time I started a new scenario. I'd
                         open a browser, search for destination board codes, dig out the route manuals,
-                        find three conflicting sources, give up, make something up, feel quietly
-                        guilty about it for the rest of the session. Multiply that by however
+                        find three conflicting sources, give up, type in a random letter, feel quietly
+                        annoyed about it for the rest of the session. Multiply that by however
                         many services a scenario needs and it gets old fast. I'm maybe a little
-                        OCD about getting the destination board codes right. Okay, very OCD.
+                        OCD about getting the destination boards correct. Okay, very OCD!
                     </p>
                     <p>
                         I also wanted to actually learn some proper frontend development. 
@@ -197,10 +197,12 @@ function About() {
                         If something's wrong, missing, or broken genuinely do let me know. This is
                         a one person show built in stolen hours, so bugs happen and coverage has
                         gaps. I'd rather fix it than have you quietly suffer through incorrect
-                        destination board codes.
+                        destination codes.
                     </p>
                     <p>
-                        And if you're building something brilliant in TSC, I'd love to hear about it.
+                        And if you're building something brilliant in TSC, I'd love to hear about it!
+                        <br/>
+                        Feel free to reach out to me on Steam, Instagram or GitHub. Links are in the footer.
                     </p>
                 </div>
             </Section>

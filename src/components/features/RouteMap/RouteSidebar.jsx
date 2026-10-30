@@ -2,7 +2,7 @@ import { toLatLng } from './routeData';
 
 export default function RouteSidebar({ routes, openRoute, onToggleRoute, onFlyTo }) {
     return (
-        <div className="w-72 flex-shrink-0 flex flex-col bg-white dark:bg-surface-dark border-l border-gray-200 dark:border-surface-dark-border overflow-y-auto">
+        <div className="w-full lg:w-72 flex-1 lg:flex-none lg:flex-shrink-0 min-h-0 flex flex-col bg-white dark:bg-surface-dark border-t lg:border-t-0 lg:border-l border-gray-200 dark:border-surface-dark-border overflow-y-auto">
             <div className="px-4 py-3 border-b border-gray-200 dark:border-surface-dark-border flex-shrink-0">
                 <p className="font-rail font-bold text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400">
                     Routes
