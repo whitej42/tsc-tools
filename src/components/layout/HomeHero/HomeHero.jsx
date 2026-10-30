@@ -1,31 +1,49 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
 const heroContext = require.context('../../../assets/images/hero', false, /\.jpg$/);
 const heroImages = heroContext.keys().map(heroContext);
 
+// Fisher-Yates: vary the order per visit without repeating an image until the
+// whole set has been shown.
+function shuffled(items) {
+    const out = [...items];
+    for (let i = out.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [out[i], out[j]] = [out[j], out[i]];
+    }
+    return out;
+}
+
 function HomeHero() {
+    const order = useMemo(() => shuffled(heroImages), []);
     const [currentIdx, setCurrentIdx] = useState(0);
 
     useEffect(() => {
+        if (order.length < 2) return undefined;
         const interval = setInterval(() => {
-            setCurrentIdx(i => {
-                let next;
-                do { next = Math.floor(Math.random() * heroImages.length); } while (next === i);
-                return next;
-            });
+            setCurrentIdx(i => (i + 1) % order.length);
         }, 5000);
         return () => clearInterval(interval);
-    }, []);
+    }, [order.length]);
+
+    // Mount only the outgoing, current and upcoming slides. Mounting all of
+    // them makes the browser fetch the entire folder on first paint.
+    const mounted = [...new Set([
+        (currentIdx - 1 + order.length) % order.length,
+        currentIdx,
+        (currentIdx + 1) % order.length,
+    ])];
 
     return (
         <section className="relative bg-gray-900 dark:bg-gray-950 overflow-hidden">
-            {heroImages.map((src, i) => (
+            {mounted.map(i => (
                 <img
-                    key={i}
-                    src={src}
+                    key={order[i]}
+                    src={order[i]}
                     alt=""
                     aria-hidden="true"
+                    decoding="async"
                     className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === currentIdx ? 'opacity-30' : 'opacity-0'}`}
                 />
             ))}
