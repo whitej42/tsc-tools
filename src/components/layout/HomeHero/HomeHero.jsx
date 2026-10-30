@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
-const heroContext = require.context('../../../assets/images/hero', false, /\.jpg$/);
+const heroContext = require.context('../../../assets/images/hero', false, /\.webp$/);
 const heroImages = heroContext.keys().map(heroContext);
 
 // Fisher-Yates: vary the order per visit without repeating an image until the
