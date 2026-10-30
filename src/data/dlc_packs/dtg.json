@@ -104,7 +104,7 @@
      },
      {
          "id": "dt_medway_valley_line",
-         "name": "Welsh Marches Line - Shrewsbury to Crewe",
+         "name": "Chatham Main & Medway Valley Lines",
          "store_url": "https://store.steampowered.com/app/677960/Train_Simulator_Chatham_Main__Medway_Valley_Lines_Route_AddOn",
          "routes": ["MEDW"]
      },
@@ -119,6 +119,18 @@
          "name": "Birmingham Cross City Line",
          "store_url": "https://store.steampowered.com/app/1515063/Train_Simulator_Birmingham_Cross_City_Line_Lichfield__Bromsgrove__Redditch_Route_AddOn/",
          "routes": ["BCC"]
+     },
+     {
+         "id": "dt_huddersfielf_line",
+         "name": "Huddersfield Line: Manchester - Leeds",
+         "store_url": "https://store.steampowered.com/app/1922049/Train_Simulator_Huddersfield_Line_Manchester__Leeds_Route_AddOn/",
+         "routes": ["HUD"]
+     },
+     {
+         "id": "dt_south_wales_mainline",
+         "name": "South Wales Main Line: Bristol - Swansea",
+         "store_url": "https://store.steampowered.com/app/1429752/Train_Simulator_South_Wales_Coastal_Bristol_Swansea_Route_Addon/",
+         "routes": ["CORNWLL"]
      }
   ]
 }

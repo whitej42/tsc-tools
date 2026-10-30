@@ -26,7 +26,7 @@ function Lines() {
                     Beta
                 </span>
                 <p className="text-gray-600 dark:text-gray-400 text-xs">
-                    Not all Train Simulator Classic routes are included yet, and station and DLC details may be incomplete. More are being added over time.
+                    Not all routes are included yet and station and DLC details may be incomplete. More are being added over time.
                 </p>
             </div>
 
