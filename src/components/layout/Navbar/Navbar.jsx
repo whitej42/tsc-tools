@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import { FaMoon, FaSun, FaTrain } from "react-icons/fa";
+import { FaMoon, FaSun, FaTrain, FaBars, FaTimes } from "react-icons/fa";
 import { SiTransportforlondon, SiNationalrail } from "react-icons/si";
 import { IoMdBoat } from "react-icons/io";
 import SidebarStatus from "../../features/LineStatus/SidebarStatus";
@@ -21,6 +21,7 @@ const navLinks = [
 
 function Navbar({ isDark, toggleTheme }) {
     const [statusOpen, setStatusOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
     const statusRef = useRef(null);
 
@@ -33,6 +34,11 @@ function Navbar({ isDark, toggleTheme }) {
         document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
+
+    // Close the mobile menu on navigation, otherwise it stays over the new page.
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location.pathname]);
 
     return (
         <header className="fixed top-0 inset-x-0 z-40 h-20 bg-rail-navy dark:bg-rail-navy-900 flex items-center px-4 shadow-rail">
@@ -49,15 +55,16 @@ function Navbar({ isDark, toggleTheme }) {
                 <img src={logo} alt="TSC Tools" className="h-12 w-auto" />
             </Link>
 
-            {/* Nav links — centered */}
-            <ul className="flex flex-1 justify-center leading-none tracking-rail text-white">
+            {/* Nav links — centered. They step down in size through the tablet
+                range and only collapse into the burger below md. */}
+            <ul className="hidden md:flex flex-1 justify-center leading-none tracking-rail text-white">
                 {navLinks.map(({ to, label }) => {
                     const active = location.pathname === to;
                     return (
                         <li key={to}>
                             <Link
                                 to={to}
-                                className={`inline-block items-center text-center px-3 py-2.5 m-1 rounded-rail font-rail font-semibold tracking-rail uppercase text-sm ${
+                                className={`inline-block items-center text-center whitespace-nowrap rounded-rail font-rail font-semibold uppercase px-1.5 py-2 mx-0.5 text-xs tracking-normal lg:px-2.5 lg:mx-1 lg:tracking-rail xl:px-3 xl:py-2.5 xl:text-sm ${
                                     active
                                         ? 'bg-rail-red text-white'
                                         : 'text-white/80 hover:bg-white/10 hover:text-white'
@@ -70,8 +77,9 @@ function Navbar({ isDark, toggleTheme }) {
                 })}
             </ul>
 
-            {/* Right side controls */}
-            <div className="flex items-center gap-1 shrink-0">
+            {/* Right side controls — ml-auto keeps them pinned once the link
+                list is hidden and no longer claims the middle. */}
+            <div className="flex items-center gap-1 shrink-0 ml-auto">
 
                 {/* Status popover */}
                 <div className="relative" ref={statusRef}>
@@ -111,7 +119,42 @@ function Navbar({ isDark, toggleTheme }) {
                 >
                     {isDark ? <FaSun /> : <FaMoon />}
                 </button>
+
+                {/* Mobile menu toggle */}
+                <button
+                    onClick={() => setMenuOpen(o => !o)}
+                    aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+                    aria-expanded={menuOpen}
+                    className="md:hidden flex items-center justify-center w-11 h-11 text-white/70 hover:text-white hover:bg-white/10 rounded-rail transition-colors text-xl"
+                >
+                    {menuOpen ? <FaTimes /> : <FaBars />}
+                </button>
             </div>
+
+            {/* Mobile menu panel */}
+            {menuOpen && (
+                <nav className="md:hidden absolute top-full inset-x-0 bg-rail-navy dark:bg-rail-navy-900 border-t border-white/10 shadow-rail">
+                    <ul className="flex flex-col py-2">
+                        {navLinks.map(({ to, label }) => {
+                            const active = location.pathname === to;
+                            return (
+                                <li key={to}>
+                                    <Link
+                                        to={to}
+                                        className={`block px-5 py-3 font-rail font-semibold tracking-rail uppercase text-sm ${
+                                            active
+                                                ? 'bg-rail-red text-white'
+                                                : 'text-white/80 hover:bg-white/10 hover:text-white'
+                                        }`}
+                                    >
+                                        {label}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </nav>
+            )}
         </header>
     );
 }

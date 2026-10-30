@@ -15,8 +15,10 @@ export default function RouteMap() {
     }
 
     return (
-        <div className="flex h-full">
-            <div className="flex-1 min-w-0 min-h-0">
+        // Side by side on desktop; stacked below lg, where a 288px sidebar
+        // would leave the map an unusable sliver.
+        <div className="flex flex-col lg:flex-row h-full">
+            <div className="h-[50vh] lg:h-auto lg:flex-1 min-w-0 min-h-0">
                 <RouteMapView
                     routes={routes}
                     flyTarget={flyTarget}
