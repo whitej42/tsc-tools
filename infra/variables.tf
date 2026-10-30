@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region for the S3 bucket."
   type        = string
-  default     = "eu-west-2"
+  default     = "us-east-1"
 }
 
 variable "project" {
@@ -13,7 +13,7 @@ variable "project" {
 variable "environment" {
   description = "Deployment environment (e.g. prod, staging). Part of resource names."
   type        = string
-  default     = "prod"
+  default     = "production"
 }
 
 variable "bucket_name" {
@@ -31,34 +31,6 @@ variable "price_class" {
     condition     = contains(["PriceClass_100", "PriceClass_200", "PriceClass_All"], var.price_class)
     error_message = "price_class must be one of PriceClass_100, PriceClass_200, PriceClass_All."
   }
-}
-
-# --- Optional custom domain -------------------------------------------------
-# Leave domain_aliases empty to serve from the default *.cloudfront.net domain
-# with the default CloudFront certificate (no ACM cert required).
-
-variable "domain_aliases" {
-  description = "Optional custom domain(s) for the distribution, e.g. [\"cdn.example.com\"]. Requires acm_certificate_arn."
-  type        = list(string)
-  default     = []
-}
-
-variable "acm_certificate_arn" {
-  description = "Bring-your-own: ARN of an existing ACM certificate in us-east-1 covering domain_aliases. Leave empty to have Terraform create one (see create_certificate)."
-  type        = string
-  default     = ""
-}
-
-variable "create_certificate" {
-  description = "Create a new ACM certificate (in us-east-1) for domain_aliases instead of supplying acm_certificate_arn. Ignored if acm_certificate_arn is set or domain_aliases is empty."
-  type        = bool
-  default     = false
-}
-
-variable "route53_zone_id" {
-  description = "Route 53 hosted zone ID for domain_aliases. If set alongside create_certificate, the cert is DNS-validated automatically. If empty, you must add the validation records manually (see acm_validation_records output)."
-  type        = string
-  default     = ""
 }
 
 variable "tags" {

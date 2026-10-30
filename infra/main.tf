@@ -1,14 +1,6 @@
 locals {
-  name              = "${var.project}-${var.environment}"
-  bucket_name       = var.bucket_name != "" ? var.bucket_name : "${local.name}-assets"
-  use_custom_domain = length(var.domain_aliases) > 0
-
-  certificate_arn = (
-    var.acm_certificate_arn != "" ? var.acm_certificate_arn :
-    local.auto_validate ? aws_acm_certificate_validation.assets[0].certificate_arn :
-    local.manage_certificate ? aws_acm_certificate.assets[0].arn :
-    ""
-  )
+  name        = "${var.project}-${var.environment}"
+  bucket_name = var.bucket_name != "" ? var.bucket_name : "${local.name}-assets"
 
   common_tags = merge(
     {
@@ -112,8 +104,6 @@ resource "aws_cloudfront_distribution" "assets" {
   is_ipv6_enabled = true
   http_version    = "http2and3"
 
-  aliases = var.domain_aliases
-
   origin {
     domain_name              = aws_s3_bucket.assets.bucket_regional_domain_name
     origin_id                = "s3-assets"
@@ -135,20 +125,8 @@ resource "aws_cloudfront_distribution" "assets" {
     }
   }
 
-  dynamic "viewer_certificate" {
-    for_each = local.use_custom_domain ? [1] : []
-    content {
-      acm_certificate_arn      = local.certificate_arn
-      ssl_support_method       = "sni-only"
-      minimum_protocol_version = "TLSv1.2_2021"
-    }
-  }
-
-  dynamic "viewer_certificate" {
-    for_each = local.use_custom_domain ? [] : [1]
-    content {
-      cloudfront_default_certificate = true
-    }
+  viewer_certificate {
+    cloudfront_default_certificate = true
   }
 
   tags = local.common_tags

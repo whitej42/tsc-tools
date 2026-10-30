@@ -67,29 +67,3 @@ Set in `terraform.tfvars`, not as GitHub variables — tfvars takes precedence
 over `TF_VAR_*` env anyway. See `variables.tf` for the full list and defaults.
 
 
-## Custom domain
-
-Leave `domain_aliases` empty to serve from the default `*.cloudfront.net` domain with the
-default certificate — no cert needed.
-
-To use your own domain you need an ACM certificate **in us-east-1** covering that hostname.
-A cert managed by Amplify cannot be reused here — it's owned by the Amplify service — so
-this stack gets its own. Pick one:
-
-**A. Bring your own cert** — request it in ACM (us-east-1) yourself, then set:
-```hcl
-domain_aliases      = ["cdn.tsc-tools.example.com"]
-acm_certificate_arn = "arn:aws:acm:us-east-1:...:certificate/..."
-```
-
-**B. Let Terraform create it** (`acm.tf`):
-```hcl
-domain_aliases     = ["cdn.tsc-tools.example.com"]
-create_certificate = true
-route53_zone_id    = "Z0123..."   # optional
-```
-- With `route53_zone_id`: the cert is DNS-validated **automatically** and apply completes end to end.
-- Without it: the cert is created but you must add the DNS records from the
-  `acm_validation_records` output to your provider, then re-run apply.
-
-Finally, point a DNS `CNAME`/alias for your hostname at the `cloudfront_domain_name` output.
