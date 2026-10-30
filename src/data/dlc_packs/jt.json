@@ -1,0 +1,58 @@
+{
+  "just_trains": [
+    {
+      "id": "jt_western_mainlines",
+      "name": "Western Mainlines",
+      "store_url": "https://www.justtrains.net/product/western-mainlines",
+      "routes": ["GWML", "BEXL", "SWSML", "CWVL", "RTL", "WSX"]
+    },
+    {
+        "id": "jt_oxford_bicester_line",
+        "name": "Western Mainlines Oxford to Bicester Extension",
+        "store_url": "https://www.justtrains.net/product/western-mainlines-oxford-bicester-extension",
+        "routes": ["CWVL"]
+    },
+    {
+        "id": "jt_chiltern_mainline",
+        "name": "Chiltern Mainline",
+        "store_url": "https://www.justtrains.net/product/chiltern-main-line-london-birmingham",
+        "routes": ["CHILT"]
+    },
+    {
+        "id": "jt_chiltern_mainline_aylesbury",
+        "name": "Chiltern Mainline Aylesbury Extension",
+        "store_url": "https://www.justtrains.net/product/chiltern-main-line-london-aylesbury-extension",
+        "routes": ["CHILT"]
+    },
+    {
+        "id": "jt_wessex_mainline",
+        "name": "Wessex Mainline Extension Southampton to Salisbury",
+        "store_url": "https://www.justtrains.net/product/wessex-main-line-southampton-salisbury-extension",
+        "routes": ["WSX"]
+    },
+    {
+         "id": "jt_southwestern_expressway",
+         "name": "Southwestern Expressways: Reading - Exeter",
+         "store_url": "https://store.steampowered.com/app/1637251/Train_Simulator_Southwestern_Expressways_Reading_Exeter_Route_AddOn/?curator_clanid=958135/",
+         "routes": ["RTL"]
+     },
+     {
+         "id": "jt_south_devon_mainline",
+         "name": "South Devon Main Line: Highbridge and Burnham - Plymouth",
+         "store_url": "https://store.steampowered.com/app/1560934/Train_Simulator_South_Devon_Main_Line_Highbridge_and_Burnham_Plymouth_Route_AddOn/?curator_clanid=958135/",
+         "routes": ["EXPLYM"]
+     },
+     {
+         "id": "jt_cornish_mainline",
+         "name": "Cornish Main Line: Plymouth – Penzance",
+         "store_url": "https://store.steampowered.com/app/1429755/Train_Simulator_Cornish_Main_Line_Plymouth_Penzance_Route_AddOn/",
+         "routes": ["EXPLYM"]
+     },
+     {
+         "id": "jt_midland_mainline",
+         "name": "Midland Mainline Complete Bundle",
+         "store_url": "https://www.justtrains.net/product/complete-midland-main-line-bundle",
+         "routes": ["MML"]
+     }
+  ]
+}

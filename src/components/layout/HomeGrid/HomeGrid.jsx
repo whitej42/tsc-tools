@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import dest      from '../../../assets/images/dest-board.png';
-import headcodes from '../../../assets/images/headcode.png';
-import routes    from '../../../assets/images/routes.png';
-import status    from '../../../assets/images/status.png';
-import guides    from '../../../assets/images/guides.png';
+import dest      from '../../../assets/images/homegrid/dest-board.webp';
+import headcodes from '../../../assets/images/homegrid/headcode.webp';
+import routes    from '../../../assets/images/homegrid/routes.webp';
+import status    from '../../../assets/images/homegrid/status.webp';
+import guides    from '../../../assets/images/homegrid/guides.webp';
 
 const items = [
     { id: 1, title: 'Destination Boards',  to: '/destinations', imgSrc: dest,       accent: '#F5A623', sub: 'Look up destination board codes by locomotive class' },
     { id: 2, title: 'Headcode Generator',  to: '/headcodes',    imgSrc: headcodes,  accent: '#003087', sub: 'Generate and save authentic UK rail headcodes' },
-    { id: 3, title: 'Routes',              to: '/lines',        imgSrc: routes,     accent: '#C00E14', sub: 'Browse route and line information', soon: true },
+    { id: 3, title: 'Routes',              to: '/routes',        imgSrc: routes,     accent: '#C00E14', sub: 'Browse route and line information'},
     { id: 4, title: 'Live Status Updates', to: '/status',       imgSrc: status,     accent: '#0A7DC2', sub: 'Real-time TfL and National Rail service status' },
     { id: 5, title: 'Guides',              to: '/guides',       imgSrc: guides,     accent: '#6B7280', sub: 'Tips and guides for scenario building', soon: true },
 ];

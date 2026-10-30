@@ -1,44 +1,21 @@
 import { FaStar, FaRegStar, FaChevronRight } from "react-icons/fa";
+import tocData from '../../../data/toc.json';
 
-const ABBREV = {
-    'awc':      { color: '#204353', label: 'AWC' },
-    'tl':       { color: '#e148b4', label: 'TL' },
-    'gn':       { color: '#411659', label: 'GN' },
-    'swt':      { color: '#f39d1c', label: 'SWT' },
-    'swr':      { color: '#0a90c7', label: 'SWR' },
-    'se':       { color: '#1c234f', label: 'SE' },
-    'sn':       { color: '#82c446', label: 'Southern' },
+// Build lookup from toc.json: id → { color, label }
+const tocLookup = new Map(tocData.map(t => [t.id, { color: t.brand_color, label: t.label }]));
+
+// Pseudo-operators not represented in toc.json
+const EXTRA = {
+    'multiple': { color: '#6b7280', label: 'Multiple' },
     'rr':       { color: '#003399', label: 'RR' },
-    'gwr':      { color: '#0a473c', label: 'GWR' },
-    'fgw':      { color: '#0a473c', label: 'FGW' },
-    'fcc':      { color: '#e21765', label: 'FCC' },
-    'ct':       { color: '#67b62f', label: 'CT' },
-    'emt':      { color: '#53364f', label: 'EMR' },
-    'nr':       { color: '#222e5c', label: 'Northern' },
-    'tpe':      { color: '#9085be', label: 'TPE' },
-    'scr':      { color: '#14377b', label: 'ScotRail' },
-    'sil':      { color: '#86c233', label: 'SL' },
-    'nse':      { color: '#0064d9', label: 'NSE' },
-    'br':       { color: '#003399', label: 'BR' },
-    'tfw':      { color: '#f70000', label: 'TFW' },
-    'atw':      { color: '#148193', label: 'ATW' },
-    'xc':       { color: '#d01846', label: 'XC' },
-    'gx':       { color: '#d5081e', label: 'GX' },
-    'ga':       { color: '#d31933', label: 'GA' },
-    'lm':       { color: '#0d4a43', label: 'LM' },
-    'lo':       { color: '#ef7b10', label: 'LO' },
-    'lu':       { color: '#e32119', label: 'LU' },
-    'cr':       { color: '#1196ce', label: 'CR' },
-    'wmt':      { color: '#f77f00', label: 'WMT' },
-    'c2c':      { color: '#b9238f', label: 'c2c' },
-    'con':      { color: '#c19321', label: 'Connex' },
-    'xc':       { color: '#c4164a', label: 'Cross Country' },
+    'white':    { color: '#9ca3af', label: 'White' },
 };
 
 export function getOperatorStyle(name) {
-    const m = ABBREV[name.toLowerCase()];
+    const key = name.toLowerCase();
+    const m = tocLookup.get(key) ?? EXTRA[key];
     return m
-        ? { color: m.color, textColor: m.textColor || '#fff', label: m.label }
+        ? { color: m.color, textColor: '#fff', label: m.label }
         : { color: '#6b7280', textColor: '#fff', label: name.toUpperCase() };
 }
 

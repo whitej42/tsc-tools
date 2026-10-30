@@ -1,0 +1,551 @@
+[
+  {
+    "lineName": "Brighton Main Line",
+    "abbreviation": "BML",
+    "lines": [
+      {
+        "name": "Brighton Main Line",
+        "color": "#65a30d",
+        "stations": ["VIC","BAK","CLJ","WSW","BAL","SRC","NRB","TTH","SRS","ECR","PUO","PUR","CDS","MHM","ELD","SAF","BAB","HHE","WVF","BUG","HSK","PRP","BTN"]
+      }
+    ]
+  },
+  {
+    "lineName": "East Coast Main Line",
+    "abbreviation": "ECML",
+    "lines": [
+      {
+        "name": "East Coast Main Line",
+        "color": "#ce0e2d",
+        "stations": ["FPK","HGY","HRN","AAP","NSG","OKL","NBA","HDW","PBR","BPK","WMG","HAT","WGC","WLW","KBW","SVG","HIT","ARL","BIW","SDY","SNO","HUN","PBO","GRA","NNG","RET","DON","YRK","THI","NTR","DAR","DHM","CLS","NCL","MAS","CRM","MPT","PEG","WDD","ACK","ALM","CHT","BWK","RSN","DUN","ELT","DRM","LND","PST","WAF","MUB","EDB"]
+      }
+    ]
+  },
+    {
+    "lineName": "WCML",
+    "abbreviation": "WCML",
+    "lines": [
+      {
+        "name": "West Coast Main Line",
+        "color": "#08524b",
+        "stations": ["EUS","WMB","BSH","WFJ","KGL","APS","HML","BKM","TRI","CED","LBZ","BLY","MKC","WOL","RUG","NUN","ATH","PSW","TAM","LTV","RGL","STA","CRE","WBQ","WGN","PRE","LAN","OXN","PNR","CAR","LOC","CRS","MTH","GLC"]
+      },
+      {
+        "name": "Birmingham Branch",
+        "color": "#08524b",
+        "stations": ["COV","CNL","THL","BKW","HIA","BHI","MGN","LEH","SCF","ADD","BHM"],
+        "branchFrom": "RUG"
+      },
+      {
+        "name": "Manchester Branch",
+        "color": "#08524b",
+        "stations": ["HYM","EDB"],
+        "branchFrom": "CRS"
+      }
+    ]
+  },
+  {
+    "lineName": "Midland Main Line South",
+    "abbreviation": "MMLS",
+    "lines": [
+      {
+        "name": "Midland Main Line South",
+        "color": "#e950bb",
+        "stations": ["STP","KTN","WHP","CRI","HEN","MIL","ELS","RDT","SAC","HPD","LTN","LUT","LEA","HLN","FLT","BDM"]
+      }
+    ]
+  },
+  {
+    "lineName": "Midland Main Line",
+    "abbreviation": "MML",
+    "lines": [
+      {
+        "name": "Midland Main Line",
+        "color": "#713563",
+        "stations": ["BDM","WEL","KET","MHR","LEI","SYS","SIL","BWS","LBO","EMD","ILN","LGM","ALF","CHD","DRO","DOR","SHF"]
+      },
+      {
+        "name": "Nottingham - Lincoln Branch",
+        "color": "#713563",
+        "stations": ["ATB","BEE","NOT","CTO","BUJ","LOW","THU","BSB","FSK","ROL","NCT","CLM","SWD","HKM","LCN"],
+        "branchFrom": "EMD"
+      },
+      {
+          "name": "Derby Branch",
+          "color": "#713563",
+          "stations": ["LGE","SPO","DBY","DFI","BLP","AMB","CHD"],
+          "branchFrom": "EMD"
+      },
+      {
+        "name": "Matlock Branch",
+        "color": "#713563",
+        "stations": ["BLP","AMB","WTS","CMF","MTB","MAT"],
+        "branchFrom": "DFI"
+      }
+    ]
+  },
+  {
+    "lineName": "Chatham Main Line",
+    "abbreviation": "CML",
+    "lines": [
+      {
+        "name": "Chatham Main Line",
+        "color": "#242b57",
+        "stations": ["VIC","WWR","CLP","BRX","HNH","WDU","SYH","PNE","KTH","BFJ","BKL","FNR","LGF","MEP","RTR","GLM","NGT","SIT","FAV"]
+      },
+      {
+        "name": "Blackfriars Branch",
+        "color": "#242b57",
+        "stations": ["BFR","EPH","LGJ"],
+        "branchFrom": "HNH"
+      },
+      {
+        "name": "Orpington Branch",
+        "color": "#242b57",
+        "stations": ["PET","ORP"],
+        "branchFrom": "BKL"
+      },
+      {
+        "name": "Catford Loop",
+        "color": "#242b57",
+        "stations": ["DMK","NHD","CFT","CTF","BGM","BEC","RVB","SRT"],
+        "branchFrom": "BRX"
+      },
+      {
+        "name": "Sheerness Branch",
+        "color": "#242b57",
+        "stations": ["KML","SWL","QBR","SSS"],
+        "branchFrom": "SIT"
+      },
+      {
+        "name": "Ramsgate via Margate",
+        "color": "#242b57",
+        "stations": ["WHI","CSW","HNB","BCH","WGA","MAR","BSR","DMP","RAM"],
+        "branchFrom": "FAV"
+      },
+      {
+        "name": "Dover via Canterbury",
+        "color": "#242b57",
+        "stations": ["SEG","CBE","BKS","ADM","AYH","SWO","SPH","KSN","DVP"],
+        "branchFrom": "FAV"
+      }
+    ]
+  },
+  {
+    "lineName": "Great Eastern Main Line",
+    "abbreviation": "GEML",
+    "lines": [
+      {
+        "name": "Great Eastern Main Line",
+        "color": "#C8102E",
+        "stations": ["LST","SRA","MYL","FOG","MNP","IFD","SVK","GMY","CTH","RMF","GDP","HRO","BRE","SNF","INT","CHM","HAP","WTM","KEL","MKT","COL","MNG","IPS","NMT","SMK","DIS","NRW"]
+      },
+      {
+        "name": "Braintree Branch",
+        "color": "#C8102E",
+        "stations": ["WNY","CES","BTP","BTR"],
+        "branchFrom": "WTM"
+      },
+      {
+        "name": "Colchester Branch",
+        "color": "#C8102E",
+        "stations": ["CET"],
+        "branchFrom": "COL"
+      },
+      {
+        "name": "Felixstowe Branch",
+        "color": "#C8102E",
+        "stations": ["WFI","DBR","TRM","FLX"],
+        "branchFrom": "IPS"
+      }
+    ]
+  },
+  {
+    "lineName": "Wherry Lines",
+    "abbreviation": "WHYL",
+    "lines": [
+      {
+          "name": "Lowesoft Branch",
+          "color": "#C8102E",
+          "stations": ["NRW","BGA","BDA","BUC","CNY","REE","HAD","SYT","OUN","LWT"]
+      },
+      {
+          "name": "Great Yarmouth Branch",
+          "color": "#C8102E",
+          "stations": ["LGD","ACL","GYM"],
+          "branchFrom": "BDA"
+      },
+      {
+          "name": "Berney Arms Branch",
+          "color": "#C8102E",
+          "stations": ["BYA","GYM"],
+          "branchFrom": "REE"
+      }
+    ]
+  },
+  {
+    "lineName": "Portsmouth Direct Line",
+    "abbreviation": "PDL",
+    "lines": [
+      {
+        "name": "Portsmouth Direct Line",
+        "color": "#0796c9",
+        "stations": ["WAT","VXH","QRB","CLJ","EAD","WIM","RAY","NEM","BRS","SUR","ESH","HER","WAL","BFN","WBY","WOK","WPL","GLD","FNC","GOD","MLF","WTY","HSL","LIP","LIS","PTR","RLN","HAV","BDH","HLS","FTN","PMS","PMH"]
+      },
+      {
+        "name": "Hampton Court Branch",
+        "color": "#0796c9",
+        "stations": ["THD","HMC"],
+        "branchFrom": "SUR"
+      }
+    ]
+  },
+  {
+    "lineName": "Watford DC Line",
+    "abbreviation": "WATDC",
+    "lines": [
+      {
+        "name": "Watford DC Line",
+        "color": "#ffa600",
+        "stations": ["EUS","SOH","KBN","QPW","KNL","WIJ","HDN","SBP","WMB","NWB","SOK","KNT","HRW","HDL","HTE","CPK","BSH","WFH","WFJ"]
+      }
+    ]
+  },
+  {
+    "lineName": "Great Western Main Line",
+    "abbreviation": "GWML",
+    "lines": [
+      {
+        "name": "Great Western Main Line",
+        "color": "#08473c",
+        "stations": ["PAD","AML","EAL","WEA","HAN","STL","HAY","WDT","LNY","SLO","BNM","TAP","MAI","TWY","RDG","TLH","PAN","GOR","CHO","DID","SWI","CPM","BTH","OLF","KYN","BRI"]
+      }
+    ]
+  },
+  {
+    "lineName": "Bristol to Exeter Line",
+    "abbreviation": "BEXL",
+    "lines": [
+      {
+        "name": "Bristol to Exeter Line",
+        "color": "#08473c",
+        "stations": ["BRI","BMT","PSN","NLS","YAT","WOR","WSM","HIG","BWT","TAU","TVP","EXD"]
+      }
+    ]
+  },
+  {
+    "lineName": "Exeter to Plymouth Line",
+    "abbreviation": "EXPLYM",
+    "lines": [
+      {
+        "name": "Exeter to Plymouth Line",
+        "color": "#08473c",
+        "stations": ["EXD","EXT","SCS","DWW","DWL","TGM","NTA","TOT","IVY","PLY"]
+      }
+    ]
+  },
+  {
+    "lineName": "Cornish Main Line",
+    "abbreviation": "CORNWLL",
+    "lines": [
+      {
+        "name": "Cornish Main Line",
+        "color": "#08473c",
+        "stations": ["PLY","DPT","DOC","KEY","SBF","STS","SGM","MEN","LSK","BOD","LOS","PAR","SAU","TRU","RED","CBN","HYL","SER","PNZ"]
+      }
+    ]
+  },
+  {
+    "lineName": "South Wales Main Line",
+    "abbreviation": "SWSML",
+    "lines": [
+      {
+        "name": "South Wales Main Line",
+        "color": "#08473c",
+        "stations": ["SWI","BPW","PWY","PIL","STJ","NWP","CDF","LLR","PCD","BGN","PYL","PTA","BAJ","BNF","NTH","SKE","LAS","SWA"]
+      },
+      {
+        "name": "South Wales Main Line",
+        "color": "#08473c",
+        "stations": ["FIT","SRD","LWH","BRI"],
+        "branchFrom": "BPW"
+      },
+      {
+        "name": "Severn Beach Line",
+        "color": "#08473c",
+        "stations": ["MTP","RDA","CFN","SML","SHH","PRI","AVN","SAR","SVB"],
+        "branchFrom": "BRI"
+      }
+    ]
+  },
+  {
+    "lineName": "Reading to Taunton Line",
+    "abbreviation": "RTL",
+    "lines": [
+      {
+        "name": "Reading to Taunton Line",
+        "color": "#08473c",
+        "stations": ["RDG","THE","AMT","MDG","THA","NRC","NBY","KIT","HGD","BDW","PEW","WSB","FRO","BRU","CLC","TAU"]
+      }
+    ]
+  },
+  {
+    "lineName": "Wessex Main Line",
+    "abbreviation": "WSX",
+    "lines": [
+      {
+        "name": "Wessex Main Line",
+        "color": "#08473c",
+        "stations": ["WSB","TRO","BOA","AVF","FFD","BTH","OLF","KYN","BRI"]
+      },
+      {
+        "name": "Salisbury Extension",
+        "color": "#08473c",
+        "stations": ["ESL","SOA","SWG","SDN","SOU","MBK","RDB","ROM","DBG","DEN","SAL"],
+        "branchFrom": "ESL"
+      }
+    ]
+  },
+  {
+    "lineName": "Cherwell Valley Line",
+    "abbreviation": "CWVL",
+    "lines": [
+      {
+        "name": "Cherwell Valley Line",
+        "color": "#08473c",
+        "stations": ["DID","APF","CUM","RAD","OXF"]
+      },
+      {
+        "name": "Oxford–Bicester line",
+        "color": "#08473c",
+        "stations": ["OXP","ISP","BIT"],
+        "branchFrom": "OXF"
+      }
+    ]
+  },
+  {
+    "lineName": "Welsh Marshes Line",
+    "abbreviation": "WMSL",
+    "lines": [
+      {
+        "name": "Welsh Marshes Line",
+        "color": "#088192",
+        "stations": ["NWP","CWM","PPL","AGV","HFD","LEO","LUD","CRV","CTT","SHR"]
+      }
+    ]
+  },
+  {
+    "lineName": "Huddersfield Line",
+    "abbreviation": "HUD",
+    "lines": [
+      {
+        "name": "Huddersfield Line",
+        "color": "#00a4eb",
+        "stations": ["LDS","COT","MLY","BTL","DEW","MIR","DHN","HUD","SWT","MSL","SYB","AHN","GUI","MCV"]
+      }
+    ]
+  },
+  {
+    "lineName": "Birmingham Cross-City Line",
+    "abbreviation": "BCC",
+    "lines": [
+      {
+        "name": "Birmingham Cross-City Line",
+        "color": "#64b53a",
+        "stations": ["LTV","LIC","SEN","BKT","BUL","FOK","SUT","WYL","CRD","ERD","GVH","AST","DUD","BHM","FWY","UNI","SLY","BRV","KNN","NFD","LOB","BTG","BMV"]
+      },
+      {
+        "name": "Redditch Branch",
+        "color": "#64b53a",
+        "stations": ["ALV","RDC"],
+        "branchFrom": "BTG"
+      }
+    ]
+  },
+  {
+    "lineName": "South Western Main Line",
+    "abbreviation": "SWML",
+    "lines": [
+      {
+        "name": "South Western Main Line",
+        "color": "#0796c9",
+        "stations": ["SDN","SOU","MBK","RDB","TTN","ANF","BEU","BCU","SWY","NWM","HNA","CHR","POK","BMH"]
+      },
+      {
+        "name": "Lymington Branch",
+        "color": "#0796c9",
+        "stations": ["LYT","LYP"],
+        "branchFrom": "BCU"
+      }
+    ]
+  },
+  {
+    "lineName": "North Clyde Line",
+    "abbreviation": "NCYL",
+    "lines": [
+      {
+        "name": "North Clyde Line",
+        "color": "#273566",
+        "stations": ["GLQ","CHC","PTK","HYN","JOR","SCH","GRS","YOK","CYK","DMR","KPT","BWG","DBE","DBC","DLR","CDR","CGD","HLC"]
+      },
+      {
+        "name": "Ballock Branch",
+        "color": "#273566",
+        "stations": ["RTN","ALX","BHC"],
+        "branchFrom": "DLR"
+      },
+      {
+        "name": "Anniesland Branch",
+        "color": "#273566",
+        "stations": ["SIN","DMY","DMC","WES","ANL","HYN","PTK"],
+        "branchFrom": "DMR"
+      },
+      {
+        "name": "Milngaive Branch",
+        "color": "#273566",
+        "stations": ["BRN","HLF","MLN"],
+        "branchFrom": "WES"
+      },
+      {
+        "name": "Maryhill Line",
+        "color": "#273566",
+        "stations": ["KVD","MYH","SUM","GSC","PPK","ASF","GLQ"],
+        "branchFrom": "ANL"
+      },
+      {
+        "name": "Springburn Branch",
+        "color": "#273566",
+        "stations": ["HST","BLG","DST","AXP","BNL","SPR","ASF"],
+        "branchFrom": "GLQ"
+      }
+    ]
+  },
+  {
+    "lineName": "Edinburgh to Glasgow via Falkirk Line",
+    "abbreviation": "EGFK",
+    "lines": [
+      {
+        "name": "Edinburgh to Glasgow",
+        "color": "#273566",
+        "stations": ["EDB","HYM","EDP","LIN","PMT","FKK","CRO","LNZ","BBG","GLQ"]
+     }
+    ]
+  },
+  {
+    "lineName": "Fife Circle Line",
+    "abbreviation": "FCL",
+    "lines": [
+      {
+        "name": "Fife Circle Line",
+        "color": "#273566",
+        "stations": ["EDB","HYM","SGL","EGY","DAM","NQU","INK","DAG","AUR","BTS","KGH","KDY","GLT","CDD","LCG","COW","DFL","DFE","ROS","INK"]
+     }
+    ]
+  },
+  {
+    "lineName": "North Wales Main Line",
+    "abbreviation": "NWML",
+    "lines": [
+      {
+        "name": "North Wales Main Line",
+        "color": "#f94c25",
+        "stations": ["CRE","CTR","SHT","FLN","PRT","RHL","AGL","CWB","LLJ","CNW","PMW","LLF","BNG","LPG","BOR","TYC","RHO","VAL","HHD"]
+     }
+    ]
+  },
+  {
+    "lineName": "Liverpool to Manchester Line via Warrington",
+    "abbreviation": "LMLW",
+    "lines": [
+      {
+        "name": "Liverpool to Manchester Line via Warrington",
+        "color": "#2a3664",
+        "stations": ["LIV","EDG","MSH","WSA","LPY","HNX","HED","HGN","WID","SNK","WAW","WAC","PDG","BWD","GLZ","IRL","FLI","CSR","URM","HUP","TRA","MUF","DGT","MCO","MAN"]
+     }
+    ]
+  },
+  {
+    "lineName": "Liverpool to Manchester Line via Chat Moss",
+    "abbreviation": "LMLCM",
+    "lines": [
+      {
+        "name": "Liverpool to Manchester Line via Chat Moss",
+        "color": "#2a3664",
+        "stations": ["LIV","EDG","WAV","BGE","ROB","HUY","WHN","RNH","LEG","SHJ","ERL","NLW","PAT","ECC","SFD","MCV"]
+      },
+      {
+        "name": "Manchester Piccadilly Branch",
+        "color": "#2a3664",
+        "stations": ["DGT","MCO","MAN","ADK"],
+        "branchFrom": "ECC"
+      }
+    ]
+  },
+  {
+    "lineName": "Bitten Line",
+    "abbreviation": "BITL",
+    "lines": [
+        {
+          "name": "Bitten Line",
+          "color": "#C8102E",
+          "stations": ["NRW","SAH","HXM","WRT","NWA","GNT","RNR","WRN","SHM"]
+      }
+    ]
+  },
+  {
+    "lineName": "Tarka Line",
+    "abbreviation": "TARKA",
+    "lines": [
+      {
+        "name": "Tarka Line",
+        "color": "#08473c",
+        "stations": ["EXD","NTC","CDI","YEO","COP","MRD","LAP","EGG","KGN","PMA","UMB","CPN","BNP"]
+      }
+    ]
+  },
+  {
+    "lineName": "Medway Valley Lines",
+    "abbreviation": "MEDW",
+    "lines": [
+      {
+        "name": "Medway Valley Lines",
+        "color": "#242b57",
+        "stations": ["SOO","CUX","HAI","SDA","NHE","AYL","BMG","EFL","WTR","YAL","BEG","PDW","TON"]
+      }
+    ]
+  },
+  {
+    "lineName": "Island Line",
+    "abbreviation": "IOWL",
+    "lines": [
+        {
+          "name": "Island Line",
+          "color": "#0796c9",
+          "stations": ["SHN","LKE","SAN","BDN","SAB","RYR","RYD","RYP"]
+        }
+     ]
+  },
+  {
+    "lineName": "Chiltern Main Line",
+    "abbreviation": "CHILT",
+    "lines": [
+      {
+        "name": "Chiltern Main Line",
+        "color": "#3273a6",
+        "stations": ["MYB","WCX","SUD","SDH","NLT","SRU","WRU","DNM","DGC","GER","SRG","BCF","HWY","SDR","PRR","HDM","BCS","KGS","BAN","LMS","WRW","WRP","HTN","LPW","DDG","WMR","SOL","OLT","ACG","TYS","SMA","BBS","BMO"]
+      },
+      {
+          "name": "Aylesbury Branch",
+          "color": "#3273a6",
+          "stations": ["HOH","RIC","CLW","CFO","AMR","GMN","WND","SKM","AYS","AVP"],
+          "branchFrom": "MYB"
+      },
+      {
+          "name": "Aylesbury Branch via Princes Risborough",
+          "color": "#3273a6",
+          "stations": ["MRS","LTK","SKM","AYS"],
+          "branchFrom": "PRR"
+      }
+    ]
+  }
+]

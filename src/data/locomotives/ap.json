@@ -9,7 +9,7 @@
       "trainVariants": [
         {
           "class": "700",
-          "operatorKey": "tl",
+          "operatorKey": "thameslink",
           "livery": "Thameslink",
           "displays": [
             {
@@ -520,7 +520,7 @@
         },
         {
           "class": "707",
-          "operatorKey": "se",
+          "operatorKey": "southeastern",
           "livery": "Southeastern",
           "displays": [
             {
@@ -1190,7 +1190,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ct",
+          "operatorKey": "central_trains",
           "livery": "Central Trains",
           "displays": [
             {
@@ -1457,7 +1457,7 @@
         },
         {
           "class": null,
-          "operatorKey": "emt",
+          "operatorKey": "east_midlands_railway",
           "livery": "East Midlands Trains",
           "displays": [
             {
@@ -1724,7 +1724,7 @@
         },
         {
           "class": null,
-          "operatorKey": "nr",
+          "operatorKey": "northern",
           "livery": "Northern Rail",
           "displays": [
             {
@@ -1991,7 +1991,7 @@
         },
         {
           "class": null,
-          "operatorKey": "tpe",
+          "operatorKey": "transpennine",
           "livery": "TransPennine Express",
           "displays": [
             {
@@ -2183,7 +2183,7 @@
         },
         {
           "class": null,
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "livery": "ScotRail",
           "displays": [
             {
@@ -2873,7 +2873,7 @@
         },
         {
           "class": null,
-          "operatorKey": "atw",
+          "operatorKey": "arrivatrains_wales",
           "livery": "Arriva Trains Wales",
           "displays": [
             {
@@ -3140,7 +3140,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ct",
+          "operatorKey": "central_trains",
           "livery": "Central Trains",
           "displays": [
             {
@@ -3407,7 +3407,7 @@
         },
         {
           "class": null,
-          "operatorKey": "emt",
+          "operatorKey": "east_midlands_railway",
           "livery": "East Midlands Trains",
           "displays": [
             {
@@ -3674,7 +3674,7 @@
         },
         {
           "class": null,
-          "operatorKey": "nr",
+          "operatorKey": "northern",
           "livery": "Northern Rail",
           "displays": [
             {
@@ -4398,7 +4398,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "atw",
+          "operatorKey": "arrivatrains_wales",
           "livery": "Arriva Trains Wales",
           "displays": [
             {
@@ -4771,7 +4771,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ct",
+          "operatorKey": "central_trains",
           "displays": [
             {
               "code": "a",
@@ -5045,7 +5045,7 @@
         },
         {
           "class": null,
-          "operatorKey": "sil",
+          "operatorKey": "silverlink",
           "livery": "Silverlink",
           "displays": [
             {
@@ -5395,7 +5395,7 @@
         },
         {
           "class": null,
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "displays": [
             {
               "code": "a",
@@ -5910,7 +5910,7 @@
         },
         {
           "class": null,
-          "operatorKey": "sn",
+          "operatorKey": "southern",
           "displays": [
             {
               "code": "a",
@@ -6177,7 +6177,7 @@
         },
         {
           "class": null,
-          "operatorKey": "tl",
+          "operatorKey": "thameslink",
           "displays": [
             {
               "code": "a",
@@ -6353,7 +6353,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "sil",
+          "operatorKey": "silverlink",
           "displays": [
             {
               "code": "1",
@@ -6560,7 +6560,7 @@
         },
         {
           "class": null,
-          "operatorKey": "tpe",
+          "operatorKey": "transpennine",
           "displays": [
             {
               "code": "1",
@@ -6642,7 +6642,7 @@
         },
         {
           "class": null,
-          "operatorKey": "lm",
+          "operatorKey": "london_midland",
           "displays": [
             {
               "code": "1",
@@ -8034,7 +8034,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "sn",
+          "operatorKey": "southern",
           "livery": "Southern",
           "displays": [
             {
@@ -8576,7 +8576,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "lo",
+          "operatorKey": "london_overground",
           "displays": [
             {
               "code": "a",
@@ -8692,7 +8692,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "sn",
+          "operatorKey": "southern",
           "displays": [
             {
               "code": "a",
@@ -9258,7 +9258,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "livery": "Greater Anglia",
           "displays": [
             {
@@ -9553,7 +9553,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "displays": [
             {
               "code": "a",
@@ -9755,7 +9755,7 @@
         },
         {
           "class": null,
-          "operatorKey": "emt",
+          "operatorKey": "east_midlands_railway",
           "livery": "Midland Mainline",
           "displays": [
             {
@@ -9912,7 +9912,7 @@
         },
         {
           "class": null,
-          "operatorKey": "sn",
+          "operatorKey": "southern",
           "displays": [
             {
               "code": "a",
@@ -10024,7 +10024,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ct",
+          "operatorKey": "central_trains",
           "displays": [
             {
               "code": "a",
@@ -10170,7 +10170,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "se",
+          "operatorKey": "southeastern",
           "livery": "Southeastern",
           "displays": [
             {
@@ -10566,7 +10566,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "se",
+          "operatorKey": "southeastern",
           "livery": "Network SouthEast / Connex South Eastern / South Eastern Trains / Southeastern",
           "displays": [
             {
@@ -10962,7 +10962,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "emt",
+          "operatorKey": "east_midlands_railway",
           "livery": "East Midlands Trains",
           "displays": [
             {
@@ -12194,7 +12194,7 @@
         },
         {
           "class": null,
-          "operatorKey": "nr",
+          "operatorKey": "northern",
           "livery": "Northern Rail / Ex-Arriva Trains Northern (NR) / Ex-First North Western (NR)",
           "displays": [
             {
@@ -12958,7 +12958,7 @@
         },
         {
           "class": null,
-          "operatorKey": "atw",
+          "operatorKey": "arrivatrains_wales",
           "livery": "Arriva Trains Wales",
           "displays": [
             {
@@ -13521,7 +13521,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ct",
+          "operatorKey": "central_trains",
           "livery": "Central Trains / Network West Midlands / Regional Railways (Centro)",
           "displays": [
             {
@@ -13708,7 +13708,7 @@
         },
         {
           "class": null,
-          "operatorKey": "nr",
+          "operatorKey": "northern",
           "livery": "Regional Railways / First North Western / Northern Rail",
           "displays": [
             {
@@ -13975,7 +13975,7 @@
         },
         {
           "class": null,
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "livery": "Regional Railways / ScotRail",
           "displays": [
             {
@@ -14102,7 +14102,7 @@
         },
         {
           "class": null,
-          "operatorKey": "atw",
+          "operatorKey": "arrivatrains_wales",
           "livery": "Valley Lines / Arriva Trains Wales",
           "displays": [
             {
@@ -14526,7 +14526,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "livery": "Anglia Railways",
           "displays": [
             {
@@ -14889,7 +14889,7 @@
         },
         {
           "class": null,
-          "operatorKey": "nr",
+          "operatorKey": "northern",
           "livery": "Regional Railways / All Northern Rail Liveries",
           "displays": [
             {
@@ -15156,7 +15156,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ct",
+          "operatorKey": "central_trains",
           "livery": "Central Trains",
           "displays": [
             {
@@ -15418,7 +15418,7 @@
         },
         {
           "class": null,
-          "operatorKey": "emt",
+          "operatorKey": "east_midlands_railway",
           "livery": "East Midlands Trains",
           "displays": [
             {
@@ -15685,7 +15685,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "livery": "ONE / Ex-ONE / Ex-CT / NXEA / Ex-NXEA ",
           "displays": [
             {
@@ -15777,7 +15777,7 @@
         },
         {
           "class": null,
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "livery": "ScotRail / Strathclyde Transport",
           "displays": [
             {
@@ -16044,7 +16044,7 @@
         },
         {
           "class": null,
-          "operatorKey": "nr",
+          "operatorKey": "northern",
           "livery": "Arriva Northern (LED)",
           "displays": [
             {
@@ -16311,7 +16311,7 @@
         },
         {
           "class": null,
-          "operatorKey": "emt",
+          "operatorKey": "east_midlands_railway",
           "livery": "East Midlands Trains (LED)",
           "displays": [
             {
@@ -16578,7 +16578,7 @@
         },
         {
           "class": null,
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "livery": "ScotRail (LED)",
           "displays": [
             {
@@ -16845,7 +16845,7 @@
         },
         {
           "class": null,
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "livery": "Greater Anglia (LED)",
           "displays": [
             {
@@ -17093,7 +17093,7 @@
         },
         {
           "class": null,
-          "operatorKey": "sn",
+          "operatorKey": "southern",
           "livery": "Southern",
           "displays": [
             {
@@ -17179,7 +17179,7 @@
       "trainVariants": [
         {
           "class": "314",
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "livery": "Multiple",
           "displays": [
             {
@@ -17331,7 +17331,7 @@
         },
         {
           "class": "315",
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "livery": "Multiple",
           "displays": [
             {
@@ -17468,7 +17468,7 @@
         },
         {
           "class": null,
-          "operatorKey": "lo",
+          "operatorKey": "london_overground",
           "livery": "London Overground & TFL Rail",
           "displays": [
             {
@@ -18132,7 +18132,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "livery": "ScotRail",
           "displays": [
             {
@@ -18403,7 +18403,7 @@
       "trainVariants": [
         {
           "class": "321",
-          "operatorKey": "lm",
+          "operatorKey": "london_midland",
           "livery": "London Midland",
           "displays": [
             {
@@ -19277,7 +19277,7 @@
         },
         {
           "class": "321",
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "livery": "Greater Anglia",
           "displays": [
             {
@@ -19509,7 +19509,7 @@
         },
         {
           "class": "321",
-          "operatorKey": "scr",
+          "operatorKey": "scotrail",
           "livery": "ScotRail",
           "displays": [
             {
@@ -19907,7 +19907,7 @@
         },
         {
           "class": null,
-          "operatorKey": "tl",
+          "operatorKey": "thameslink",
           "livery": "Thameslink White",
           "displays": [
             {
@@ -20174,7 +20174,7 @@
         },
         {
           "class": null,
-          "operatorKey": "lm",
+          "operatorKey": "london_midland",
           "livery": "London Midland",
           "displays": [
             {
@@ -20256,7 +20256,7 @@
         },
         {
           "class": null,
-          "operatorKey": "nr",
+          "operatorKey": "northern",
           "livery": "Northern",
           "displays": [
             {

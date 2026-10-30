@@ -1,0 +1,362 @@
+[
+  {
+    "id": "avanti",
+    "name": "Avanti West Coast",
+    "label": "AWC",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#1d1d1b",
+    "era": "2019-present"
+  },
+  {
+    "id": "c2c",
+    "name": "c2c",
+    "label": "c2c",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#b7007c",
+    "era": "1996-present"
+  },
+  {
+    "id": "chiltern",
+    "name": "Chiltern Railways",
+    "label": "CH",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#00b0f0",
+    "era": "1996-present"
+  },
+  {
+    "id": "crosscountry",
+    "name": "CrossCountry",
+    "label": "XC",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#660000",
+    "era": "2007-present"
+  },
+  {
+    "id": "east_midlands_railway",
+    "name": "East Midlands Railway",
+    "label": "EMR",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#713563",
+    "era": "2019-present"
+  },
+  {
+    "id": "elizabeth_line",
+    "name": "Elizabeth Line",
+    "label": "EL",
+    "status": "active",
+    "type": "tfl",
+    "brand_color": "#9364cc",
+    "era": "2022-present"
+  },
+  {
+    "id": "gatwick_express",
+    "name": "Gatwick Express",
+    "label": "GX",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#eb1c24",
+    "era": "1994-present"
+  },
+  {
+    "id": "grand_central",
+    "name": "Grand Central",
+    "label": "GC",
+    "status": "active",
+    "type": "open_access",
+    "brand_color": "#1d1d1b",
+    "era": "2007-present"
+  },
+  {
+    "id": "greater_anglia",
+    "name": "Greater Anglia",
+    "label": "GA",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#d71920",
+    "era": "2012-present"
+  },
+  {
+    "id": "gwr",
+    "name": "Great Western Railway",
+    "label": "GWR",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#003224",
+    "era": "2015-present"
+  },
+  {
+    "id": "hull_trains",
+    "name": "Hull Trains",
+    "label": "HT",
+    "status": "active",
+    "type": "open_access",
+    "brand_color": "#de005c",
+    "era": "2000-present"
+  },
+  {
+    "id": "lner",
+    "name": "London North Eastern Railway",
+    "label": "LNER",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#ce0e2d",
+    "era": "2018-present"
+  },
+  {
+    "id": "lnwr",
+    "name": "London Northwestern Railway",
+    "label": "LNWR",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#1e2d5e",
+    "era": "2017-present"
+  },
+  {
+    "id": "london_overground",
+    "name": "London Overground",
+    "label": "LO",
+    "status": "active",
+    "type": "tfl",
+    "brand_color": "#f77f00",
+    "era": "2007-present"
+  },
+  {
+    "id": "lumo",
+    "name": "Lumo",
+    "label": "Lumo",
+    "status": "active",
+    "type": "open_access",
+    "brand_color": "#2d3092",
+    "era": "2021-present"
+  },
+  {
+    "id": "merseyrail",
+    "name": "Merseyrail",
+    "label": "Merseyrail",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#ffde00",
+    "era": "2003-present"
+  },
+  {
+    "id": "northern",
+    "name": "Northern",
+    "label": "Northern",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#004593",
+    "era": "2020-present"
+  },
+  {
+    "id": "scotrail",
+    "name": "ScotRail",
+    "label": "ScotRail",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#004593",
+    "era": "2022-present"
+  },
+  {
+    "id": "southeastern",
+    "name": "Southeastern",
+    "label": "SE",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#36ade3",
+    "era": "2006-present"
+  },
+  {
+    "id": "southern",
+    "name": "Southern",
+    "label": "Southern",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#8cc63f",
+    "era": "2001-present"
+  },
+  {
+    "id": "swr",
+    "name": "South Western Railway",
+    "label": "SWR",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#0f96ce",
+    "era": "2017-present"
+  },
+  {
+    "id": "tfw",
+    "name": "Transport for Wales",
+    "label": "TFW",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#ff0000",
+    "era": "2018-present"
+  },
+  {
+    "id": "thameslink",
+    "name": "Thameslink",
+    "label": "TL",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#e950bb",
+    "era": "2014-present"
+  },
+  {
+    "id": "transpennine",
+    "name": "TransPennine Express",
+    "label": "TPE",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#00a4eb",
+    "era": "2016-present"
+  },
+  {
+    "id": "wmr",
+    "name": "West Midlands Railway",
+    "label": "WMR",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#ff8200",
+    "era": "2017-present"
+  },
+  {
+    "id": "arrivatrains_wales",
+    "name": "Arriva Trains Wales",
+    "label": "ATW",
+    "status": "defunct",
+    "era": "2003-2018",
+    "successor_id": "tfw",
+    "brand_color": "#00b2a9"
+  },
+  {
+    "id": "central_trains",
+    "name": "Central Trains",
+    "label": "CT",
+    "status": "defunct",
+    "era": "1997-2007",
+    "successor_id": "london_midland",
+    "brand_color": "#00a550"
+  },
+  {
+    "id": "fcc",
+    "name": "First Capital Connect",
+    "label": "FCC",
+    "status": "defunct",
+    "era": "2006-2014",
+    "successor_id": "thameslink",
+    "brand_color": "#1e224c"
+  },
+  {
+    "id": "gner",
+    "name": "GNER",
+    "label": "GNER",
+    "status": "defunct",
+    "era": "1996-2007",
+    "successor_id": "lner",
+    "brand_color": "#002a4e"
+  },
+  {
+    "id": "london_midland",
+    "name": "London Midland",
+    "label": "LM",
+    "status": "defunct",
+    "era": "2007-2017",
+    "successor_id": "lnwr",
+    "brand_color": "#84bd00"
+  },
+  {
+    "id": "midland_mainline",
+    "name": "Midland Mainline",
+    "label": "MM",
+    "status": "defunct",
+    "era": "1996-2007",
+    "successor_id": "east_midlands_railway",
+    "brand_color": "#008080"
+  },
+  {
+    "id": "silverlink",
+    "name": "Silverlink",
+    "label": "SL",
+    "status": "defunct",
+    "era": "1997-2007",
+    "successor_id": "london_overground",
+    "brand_color": "#432a76"
+  },
+  {
+    "id": "virgin_west_coast",
+    "name": "Virgin Trains (West Coast)",
+    "label": "VWC",
+    "status": "defunct",
+    "era": "1997-2019",
+    "successor_id": "avanti",
+    "brand_color": "#e21a23"
+  },
+  {
+    "id": "swt",
+    "name": "South West Trains",
+    "label": "SWT",
+    "status": "defunct",
+    "type": "franchise",
+    "brand_color": "#fd9c28",
+    "era": "2007-2017"
+  },
+  {
+    "id": "fgw",
+    "name": "First Great Western",
+    "label": "FGW",
+    "status": "defunct",
+    "type": "franchise",
+    "brand_color": "#544993",
+    "era": "2006-2015"
+  },
+  {
+    "id": "nse",
+    "name": "Network SouthEast",
+    "label": "NSE",
+    "status": "defunct",
+    "type": "government",
+    "brand_color": "#0062af",
+    "era": "1986-1994"
+  },
+  {
+    "id": "br",
+    "name": "British Rail",
+    "label": "BR",
+    "status": "defunct",
+    "type": "government",
+    "brand_color": "#06566d",
+    "era": "1963-1997"
+  },
+  {
+    "id": "gn",
+    "name": "Great Northern",
+    "label": "GN",
+    "status": "active",
+    "type": "franchise",
+    "brand_color": "#4f087d",
+    "era": "2014-present"
+  },
+  {
+    "id": "con",
+    "name": "Connex",
+    "label": "Connex",
+    "status": "defunct",
+    "type": "franchise",
+    "brand_color": "#ffd55e",
+    "era": "1996-2003"
+  },
+  {
+    "id": "lu",
+    "name": "London Underground",
+    "label": "LU",
+    "status": "active",
+    "type": "government",
+    "brand_color": "#e12621",
+    "era": "1863-present"
+  }
+]

@@ -5,7 +5,7 @@ import Footer from './components/layout/Footer/Footer';
 
 import Home from './pages/Home';
 import Destinations from './pages/Destinations';
-import Lines from './pages/Lines';
+import Lines from './pages/Routes';
 import Headcodes from './pages/Headcodes';
 import Status from './pages/Status';
 import Guides from './pages/Guides';
@@ -35,7 +35,7 @@ function App() {
         <Navbar isDark={isDark} toggleTheme={() => setIsDark(d => !d)} />
 
         {/* Offset for fixed navbar */}
-        <main className="flex-1 flex flex-col pt-14">
+        <main className="flex-1 flex flex-col pt-20">
           {/* <div className="w-full max-w-4xl mx-auto px-4 py-3">
             <div className="bg-rail-red/10 border border-rail-red/30 text-rail-red dark:bg-rail-red/20 dark:border-rail-red/50 dark:text-red-300 rounded-card px-4 py-2 text-sm font-semibold text-center tracking-rail">
               This site is still under development — some features may not work as expected.
@@ -45,7 +45,7 @@ function App() {
           <Routes>
             <Route path="/"             element={<Home />} />
             <Route path="/destinations" element={<Destinations />} />
-            <Route path="/lines"        element={<Lines />} />
+            <Route path="/routes"        element={<Lines />} />
             <Route path="/headcodes"    element={<Headcodes />} />
             <Route path="/status"       element={<Status />} />
             <Route path="/guides"       element={<Guides />} />

@@ -1,7 +1,7 @@
-import ap   from '../data/ap.json';
-import dtg  from '../data/dtg.json';
-import jt   from '../data/jt.json';
-import misc from '../data/misc.json';
+import ap   from '../data/locomotives/ap.json';
+import dtg  from '../data/locomotives/dtg.json';
+import jt   from '../data/locomotives/jt.json';
+import misc from '../data/locomotives/misc.json';
 
 const locos = [
     ...ap.dlcPacks,

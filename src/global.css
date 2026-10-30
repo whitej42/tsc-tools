@@ -16,6 +16,14 @@ a { text-decoration: none; color: inherit; }
     .panel-offset { right: 500px; }
 }
 
+/* ── Leaflet z-index containment ─────────────────────────── */
+/* Leaflet's internal layers (tiles, controls) use z-index 200–500.
+   Isolating the map container into its own stacking context keeps
+   those layers from appearing above the fixed navbar/sidebar. */
+.leaflet-container {
+    isolation: isolate;
+}
+
 /* ── LineStatus frozen components — force readable text ───── */
 /* Colours.css overrides this for light-background lines (circle, victoria, etc.) */
 .line-name,

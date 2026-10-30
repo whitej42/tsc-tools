@@ -152,7 +152,7 @@
       "trainVariants": [
         {
           "class": "375",
-          "operatorKey": "se",
+          "operatorKey": "southeastern",
           "displays": [
             {
               "code": "a",
@@ -414,7 +414,7 @@
         },
         {
           "class": "377",
-          "operatorKey": "sn",
+          "operatorKey": "southern",
           "displays": [
             {
               "code": "a",
@@ -818,7 +818,7 @@
         },
         {
           "class": "378",
-          "operatorKey": "lo",
+          "operatorKey": "london_overground",
           "displays": [
             {
               "code": "a",
@@ -963,7 +963,7 @@
       "trainVariants": [
         {
           "class": "350",
-          "operatorKey": "lm",
+          "operatorKey": "london_midland",
           "displays": [
             {
               "code": "01",
@@ -1170,7 +1170,7 @@
         },
         {
           "class": "360",
-          "operatorKey": "ga",
+          "operatorKey": "greater_anglia",
           "displays": [
             {
               "code": "A",
@@ -1967,7 +1967,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "xc",
+          "operatorKey": "crosscountry",
           "displays": [
             {
               "code": "A",
@@ -2112,7 +2112,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "awc",
+          "operatorKey": "avanti",
           "displays": [
             {
               "code": "A",
@@ -2772,7 +2772,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "atw",
+          "operatorKey": "arrivatrains_wales",
           "displays": [
             {
               "code": "a",
@@ -3411,7 +3411,7 @@
         },
         {
           "class": null,
-          "operatorKey": "atw",
+          "operatorKey": "arrivatrains_wales",
           "displays": [
             {
               "code": "A",
@@ -3698,7 +3698,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "atw",
+          "operatorKey": "arrivatrains_wales",
           "displays": [
             {
               "code": "A",
@@ -3980,7 +3980,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "gx",
+          "operatorKey": "gatwick_express",
           "displays": [
             {
               "code": "A",
@@ -4045,7 +4045,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "se",
+          "operatorKey": "southeastern",
           "displays": [
             {
               "code": "a",
@@ -4320,7 +4320,7 @@
       "trainVariants": [
         {
           "class": null,
-          "operatorKey": "se",
+          "operatorKey": "southeastern",
           "displays": [
             {
               "code": "a",
