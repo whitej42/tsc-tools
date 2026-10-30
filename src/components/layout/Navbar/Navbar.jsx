@@ -4,7 +4,7 @@ import { FaMoon, FaSun, FaTrain } from "react-icons/fa";
 import { SiTransportforlondon, SiNationalrail } from "react-icons/si";
 import { IoMdBoat } from "react-icons/io";
 import SidebarStatus from "../../features/LineStatus/SidebarStatus";
-import logo from "../../../assets/images/tsctoolslogo.png";
+import logo from "../../../assets/images/tsctoolslogo.webp";
 
 const tube_api  = "https://api.tfl.gov.uk/Line/Mode/tube,overground,dlr,tram,elizabeth-line/Status";
 const rail_api  = "https://api.tfl.gov.uk/Line/Mode/national-rail/Status";
