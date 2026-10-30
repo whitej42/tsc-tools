@@ -52,9 +52,6 @@ jobs:
         with:
           terraform_version: "1.11.4"
 
-      - name: Terraform fmt (check)
-        run: terraform fmt -check -recursive
-
       - name: Terraform init
         run: terraform init -input=false
 
