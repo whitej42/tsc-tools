@@ -5,10 +5,23 @@ export function FitBounds({ allPositions }) {
     const map = useMap();
     const fitted = useRef(false);
     useEffect(() => {
-        if (!fitted.current && allPositions.length > 0) {
+        if (fitted.current || allPositions.length === 0) return undefined;
+
+        // Leaflet still measures the container as zero-height on first paint, and
+        // fitting bounds into a zero-height viewport lands at max zoom. Wait for a
+        // real size before fitting, and only latch once we actually have.
+        let raf;
+        const fit = () => {
+            map.invalidateSize();
+            if (map.getSize().y === 0) {
+                raf = requestAnimationFrame(fit);
+                return;
+            }
             map.fitBounds(allPositions, { padding: [40, 40] });
             fitted.current = true;
-        }
+        };
+        fit();
+        return () => cancelAnimationFrame(raf);
     }, [map, allPositions]);
     return null;
 }
