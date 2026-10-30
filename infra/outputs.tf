@@ -25,7 +25,7 @@ output "certificate_arn" {
 
 output "acm_validation_records" {
   description = "DNS validation records to add manually when create_certificate=true but no route53_zone_id is provided. Empty otherwise."
-  value = local.manage_certificate && !local.auto_validate ? [
+  value       = local.manage_certificate && !local.auto_validate ? [
     for dvo in aws_acm_certificate.assets[0].domain_validation_options : {
       name  = dvo.resource_record_name
       type  = dvo.resource_record_type
