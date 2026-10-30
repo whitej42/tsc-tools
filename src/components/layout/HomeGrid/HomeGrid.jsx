@@ -10,7 +10,7 @@ const items = [
     { id: 2, title: 'Headcode Generator',  to: '/headcodes',    imgSrc: headcodes,  accent: '#003087', sub: 'Generate and save authentic UK rail headcodes' },
     { id: 3, title: 'Routes',              to: '/routes',        imgSrc: routes,     accent: '#C00E14', sub: 'Browse route and line information'},
     { id: 4, title: 'Live Status Updates', to: '/status',       imgSrc: status,     accent: '#0A7DC2', sub: 'Real-time TfL and National Rail service status' },
-    { id: 5, title: 'Guides',              to: '/guides',       imgSrc: guides,     accent: '#6B7280', sub: 'Tips and guides for scenario building', soon: true },
+    { id: 5, title: 'Guides',              to: '/guides',       imgSrc: guides,     accent: '#C00E14', sub: 'Hand-picked guides, tutorials and tools' },
 ];
 
 function HomeGrid() {

@@ -24,8 +24,8 @@ const features = [
     },
     {
         title: "Guides",
-        desc: "Tips, notes, and the occasional rabbit hole for scenario builders.",
-        future: true,
+        desc: "Hand-picked guides, tutorials and tools from the community — scenario creation, steam driving, rail maps and live timetables.",
+        future: false,
     },
 ];
 
