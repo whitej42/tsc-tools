@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.5.0"
+  required_version = ">= 1.11.0"
 
   required_providers {
     aws = {
@@ -10,7 +10,10 @@ terraform {
 
   # Remote state. Configured at init time via `-backend-config` so no secrets
   # or account-specific values live in the repo. See the pipeline / README.
-  backend "s3" {}
+  # S3 native state locking (TF >= 1.11) — no DynamoDB table to bootstrap.
+  backend "s3" {
+    use_lockfile = true
+  }
 }
 
 # Default provider — region for the S3 bucket and most resources.

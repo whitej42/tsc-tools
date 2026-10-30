@@ -1,6 +1,6 @@
 locals {
-  name         = "${var.project}-${var.environment}"
-  bucket_name  = var.bucket_name != "" ? var.bucket_name : "${local.name}-assets"
+  name              = "${var.project}-${var.environment}"
+  bucket_name       = var.bucket_name != "" ? var.bucket_name : "${local.name}-assets"
   use_custom_domain = length(var.domain_aliases) > 0
 
   certificate_arn = (

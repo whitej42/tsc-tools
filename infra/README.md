@@ -19,18 +19,17 @@ The React app points at this via `REACT_APP_HERO_BASE_URL` (see the `hero_base_u
 
 ## One-time bootstrap (remote state)
 
-The backend stores state in S3 with DynamoDB locking. These must exist **before** the first `init` (Terraform can't create its own backend). Create once, per AWS account:
+State lives in S3 with native lockfile locking (Terraform >= 1.11, so no
+DynamoDB table). The bucket must exist before the first `init`:
 
 ```bash
-aws s3api create-bucket --bucket my-tfstate-bucket --region eu-west-2 \
-  --create-bucket-configuration LocationConstraint=eu-west-2
-aws s3api put-bucket-versioning --bucket my-tfstate-bucket \
-  --versioning-configuration Status=Enabled
-aws dynamodb create-table --table-name my-tf-locks \
-  --attribute-definitions AttributeName=LockID,AttributeType=S \
-  --key-schema AttributeName=LockID,KeyType=HASH \
-  --billing-mode PAY_PER_REQUEST --region eu-west-2
+aws s3api create-bucket --bucket tsc-tools-tfstate --region eu-west-2   --create-bucket-configuration LocationConstraint=eu-west-2
+aws s3api put-bucket-versioning --bucket tsc-tools-tfstate   --versioning-configuration Status=Enabled
 ```
+
+Then set the repo variables the pipeline reads: `AWS_REGION`,
+`AWS_ROLE_TO_ASSUME` (the GitHub OIDC role ARN), `TF_BACKEND_BUCKET`.
+Everything else comes from `terraform.tfvars`.
 
 ## Running locally
 

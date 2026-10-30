@@ -33,18 +33,6 @@ variable "price_class" {
   }
 }
 
-variable "default_ttl" {
-  description = "Default CloudFront cache TTL in seconds."
-  type        = number
-  default     = 86400 # 1 day
-}
-
-variable "max_ttl" {
-  description = "Maximum CloudFront cache TTL in seconds."
-  type        = number
-  default     = 604800 # 7 days
-}
-
 # --- Optional custom domain -------------------------------------------------
 # Leave domain_aliases empty to serve from the default *.cloudfront.net domain
 # with the default CloudFront certificate (no ACM cert required).

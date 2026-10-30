@@ -26,26 +26,10 @@ defaults:
     working-directory: infra
 
 env:
-  # --- AWS auth (via OIDC role assumption — no static keys) ---
+  # AWS auth via GitHub OIDC role assumption — no static keys.
   AWS_REGION: ${{ vars.AWS_REGION }}
   AWS_ROLE_TO_ASSUME: ${{ vars.AWS_ROLE_TO_ASSUME }}
-
-  # --- Remote state backend (set as repo/environment variables) ---
   TF_BACKEND_BUCKET: ${{ vars.TF_BACKEND_BUCKET }}
-  TF_BACKEND_KEY: ${{ vars.TF_BACKEND_KEY }}
-  TF_BACKEND_REGION: ${{ vars.TF_BACKEND_REGION }}
-  TF_BACKEND_DYNAMODB_TABLE: ${{ vars.TF_BACKEND_DYNAMODB_TABLE }}
-
-  # --- Terraform input variables (TF_VAR_* maps to var.* automatically) ---
-  TF_VAR_aws_region: ${{ vars.AWS_REGION }}
-  TF_VAR_project: ${{ vars.TF_VAR_PROJECT }}
-  TF_VAR_environment: ${{ vars.TF_VAR_ENVIRONMENT }}
-  TF_VAR_bucket_name: ${{ vars.TF_VAR_BUCKET_NAME }}
-  TF_VAR_price_class: ${{ vars.TF_VAR_PRICE_CLASS }}
-  TF_VAR_domain_aliases: ${{ vars.TF_VAR_DOMAIN_ALIASES }}
-  TF_VAR_acm_certificate_arn: ${{ vars.TF_VAR_ACM_CERTIFICATE_ARN }}
-  TF_VAR_create_certificate: ${{ vars.TF_VAR_CREATE_CERTIFICATE }}
-  TF_VAR_route53_zone_id: ${{ vars.TF_VAR_ROUTE53_ZONE_ID }}
 
 jobs:
   terraform:
@@ -69,7 +53,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "1.9.8"
+          terraform_version: "1.11.4"
 
       - name: Terraform fmt (check)
         run: terraform fmt -check -recursive
@@ -78,9 +62,8 @@ jobs:
         run: |
           terraform init \
             -backend-config="bucket=${TF_BACKEND_BUCKET}" \
-            -backend-config="key=${TF_BACKEND_KEY}" \
-            -backend-config="region=${TF_BACKEND_REGION}" \
-            -backend-config="dynamodb_table=${TF_BACKEND_DYNAMODB_TABLE}" \
+            -backend-config="key=infra/terraform.tfstate" \
+            -backend-config="region=${AWS_REGION}" \
             -backend-config="encrypt=true"
 
       - name: Terraform validate
