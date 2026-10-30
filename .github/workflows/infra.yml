@@ -26,10 +26,7 @@ defaults:
     working-directory: infra
 
 env:
-  # AWS auth via GitHub OIDC role assumption — no static keys.
-  AWS_REGION: ${{ vars.AWS_REGION }}
-  AWS_ROLE_TO_ASSUME: ${{ vars.AWS_ROLE_TO_ASSUME }}
-  TF_BACKEND_BUCKET: ${{ vars.TF_BACKEND_BUCKET }}
+  AWS_REGION: eu-west-2
 
 jobs:
   terraform:
@@ -46,7 +43,7 @@ jobs:
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ env.AWS_ROLE_TO_ASSUME }}
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
           role-session-name: gha-tsc-tools-infra
 
@@ -59,12 +56,7 @@ jobs:
         run: terraform fmt -check -recursive
 
       - name: Terraform init
-        run: |
-          terraform init \
-            -backend-config="bucket=${TF_BACKEND_BUCKET}" \
-            -backend-config="key=infra/terraform.tfstate" \
-            -backend-config="region=${AWS_REGION}" \
-            -backend-config="encrypt=true"
+        run: terraform init -input=false
 
       - name: Terraform validate
         run: terraform validate

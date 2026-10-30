@@ -8,10 +8,11 @@ terraform {
     }
   }
 
-  # Remote state. Configured at init time via `-backend-config` so no secrets
-  # or account-specific values live in the repo. See the pipeline / README.
-  # S3 native state locking (TF >= 1.11) — no DynamoDB table to bootstrap.
+  # Remote state — shared backend bucket, same as the other projects.
   backend "s3" {
+    bucket       = "smej-backend-bucket"
+    key          = "tsc-tools"
+    region       = "us-east-1"
     use_lockfile = true
   }
 }
